@@ -270,7 +270,7 @@
         };
         "custom/powermenu" = {
           "format" = "";
-          "on-click" = "pkill rofi || ~/.config/rofi/powermenu.sh";
+          "on-click" = "pkill wofi || ~/.config/wofi/powermenu.sh";
           "tooltip" = false;
         };
         "tray" = {

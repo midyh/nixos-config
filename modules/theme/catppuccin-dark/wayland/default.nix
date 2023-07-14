@@ -3,5 +3,6 @@ let
 in
 [
   ./notice
+  ./wofi
 ] ++ common
 
