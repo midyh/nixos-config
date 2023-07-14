@@ -3,7 +3,7 @@
 {
   programs = {
     alacritty.settings = {
-      font.family = "FiraCode Nerd Font";
+      font.normal.family = "FiraCode Nerd Font";
       font.size = 14;
       colors = {
         primary = {
