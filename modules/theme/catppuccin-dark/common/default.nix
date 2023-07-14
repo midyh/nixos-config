@@ -1,0 +1,6 @@
+[
+  ./fish
+  ./gtk
+  ./alacritty
+]
+
