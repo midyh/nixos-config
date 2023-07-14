@@ -270,7 +270,7 @@
         };
         "custom/powermenu" = {
           "format" = "";
-          "on-click" = "pkill wofi || ~/.config/wofi/powermenu.sh";
+          "on-click" = "~/.config/wofi/powermenu.sh";
           "tooltip" = false;
         };
         "tray" = {

@@ -1,3 +1,19 @@
-!#/bin/sh
-wofi -show p -modi p:~/.config/wofi/off.sh
+#!/usr/bin/env bash
 
+op=$(echo -e " Poweroff\n Reboot\n Suspend\n Lock\n Logout" | wofi -i --dmenu | awk '{print tolower($2)}' )
+
+case $op in 
+        poweroff)
+                ;&
+        reboot)
+                ;&
+        suspend)
+                systemctl $op
+                ;;
+        lock)
+		swaylock
+                ;;
+        logout)
+                swaymsg exit
+                ;;
+esac
