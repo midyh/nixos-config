@@ -25,11 +25,6 @@
       package = pkgs.nordzy-cursor-theme;
     };
 
-    iconTheme = {
-      name = "Nordic";
-      package = pkgs.nordzy-icon-theme;
-    };
-
     font = {
       name = "FiraCode Nerd Font";
       size = 13;
