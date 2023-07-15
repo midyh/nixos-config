@@ -6,10 +6,8 @@ stdenv.mkDerivation rec {
 
   src = fetchgit {
     url = "https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme.git";
-    sparseCheckout = ''
-      themes
-    '';
-    sha256 = "0000000000000000000000000000000000000000000000000000";
+    sparseCheckout = [ "themes" ];
+    sha256 = "sha256-6FoxQ+w5rToaaluB/tzbiEHc2PcH7PoCxJ/rKeF/LxQ=";
   };
 
   installPhase = ''
