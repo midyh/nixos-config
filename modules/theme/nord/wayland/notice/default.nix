@@ -1,4 +1,5 @@
 { config, pkgs, ... }:
+{
  gtk3.extraConfig = {
       gtk-xft-antialias = 0; # 1
       gtk-xft-hinting = 1;
