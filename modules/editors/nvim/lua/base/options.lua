@@ -5,6 +5,7 @@ local options = {
   shiftwidth = 2,
   expandtab = true,
   smartindent = false,
+  autoindent = true,
   termguicolors = false,
   hlsearch = false,
   scrolloff = 20,

@@ -18,6 +18,8 @@ if os.getenv("GTK_THEME") == "Catppuccin-Frappe-Pink" then
   lazy_theme = "catppuccin-frappe"
 elseif os.getenv("GTK_THEME") == "Nordic" then
   lazy_theme = "nord"
+elseif os.getenv("GTK_THEME") == "Kanagawa-Dragon" then
+  lazy_theme = "kanagawa-dragon"
 end
 
 local opts = {

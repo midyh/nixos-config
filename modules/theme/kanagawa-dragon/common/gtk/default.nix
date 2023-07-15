@@ -1,8 +1,8 @@
-{ config, pkgs, lib, inputs, user, ... }:
+{ cofig, pkgs, lib, inputs, user, ... }:
 
 {
   home.sessionVariables = {
-    GTK_THEME = "Nordic";
+    GTK_THEME = "Kanagawa-Dragon";
   };
 
   home.pointerCursor = {
@@ -16,8 +16,8 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Nordic";
-      package = pkgs.nord-gtk;
+      name = "Kanagawa";
+      package = pkgs.kanagawa-gtk;
     };
 
     cursorTheme = {
@@ -44,3 +44,4 @@
     '';
   };
 }
+
