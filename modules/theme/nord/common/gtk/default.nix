@@ -6,7 +6,7 @@
   };
 
   home.pointerCursor = {
-    package = pkgs.nordzy-cursor-theme;
+    package = pkgs.nordzy-cursors;
     name = "Nordic";
     size = 16;
   };
@@ -22,7 +22,6 @@
 
     cursorTheme = {
       name = "Nordic";
-      package = pkgs.nordzy-cursor-theme;
     };
 
     font = {
