@@ -20,7 +20,7 @@ let
   '';
 
   default_wall = pkgs.writeShellScriptBin "default_wall" ''
-    swaybg -i "${../theme/kanagawa/common/wall/default.jpg}"
+    swaybg -i "${../theme/kanagawa-dragon/common/wall/default.jpg}"
   '';
 
   launch_waybar = pkgs.writeShellScriptBin "launch_waybar" ''
