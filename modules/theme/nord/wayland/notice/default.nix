@@ -14,7 +14,6 @@
       gtk-xft-rgba = "rgb";
     '';
 
-{
   services.mako = {
     font = "FiraCode Nerd Font";
     width = 256;
