@@ -85,7 +85,10 @@ function fish_prompt
             set repo_info "$repo_info$dirty"
         end
     end
-
-    echo -n -s $arrow ' '$cwd $repo_info $normal ' '
+    if test "$IN_NIX_SHELL" = "impure"
+      echo -n -s $arrow_color "nix-shell ❄️ " ' '$cwd $repo_info $normal ' '
+    else
+      echo -n -s $arrow ' '$cwd $repo_info $normal ' '
+    end
 end
 
