@@ -1,15 +1,15 @@
 return {
-  {
-    "rebelot/kanagawa.nvim",
-    lazy = false,
-    cond = function()
-      if os.getenv("GTK_THEME") == "Kanagawa-Dragon" then
-        return true
-      else
-        return false
-      end
-    end,
-    priority = 1000,
-  },
+  "catppuccin/nvim",
+  lazy = false,
+  name = "catppuccin",
+  priority = 1000,
+  config = function()
+    require("catppuccin").setup({
+      compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
+      background = {
+        light = "mocha",
+        dark = "mocha",
+      },
+    })
+  end,
 }
-

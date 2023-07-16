@@ -113,6 +113,9 @@
       };
     };
     extraConfig = ''
+      set $opacity 0.85
+      for_window [app_id="Alacritty"] opacity $opacity
+
       output * adaptive_sync on
       default_border pixel 3
 
