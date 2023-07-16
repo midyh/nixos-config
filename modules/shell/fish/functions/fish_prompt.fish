@@ -68,7 +68,7 @@ function fish_prompt
         set arrow_color "$red"
     end
 
-    set -l arrow $arrow_color (hostname)" ❄️ "
+    set -l arrow $arrow_color (hostname)" 󱄅 "
     if fish_is_root_user
         set arrow "$arrow_color $prompt_hostname# "
     end
@@ -86,7 +86,7 @@ function fish_prompt
         end
     end
     if test "$IN_NIX_SHELL" = "impure"
-      echo -n -s $arrow_color "nix-shell ❄️ " ' '$cwd $repo_info $normal ' '
+      echo -n -s $arrow_color "nix-shell 󱄅 " ' '$cwd $repo_info $normal ' '
     else
       echo -n -s $arrow ' '$cwd $repo_info $normal ' '
     end
