@@ -11,5 +11,6 @@ return {
         dark = "mocha",
       },
     })
+    vim.cmd.colorscheme "catppuccin"
   end,
 }

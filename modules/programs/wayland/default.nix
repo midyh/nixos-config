@@ -3,5 +3,6 @@ let
 in
 [
   ./launcher
+  ./notice
 ] ++ common
 
