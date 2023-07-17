@@ -10,11 +10,8 @@
   programs = {
     neovim = {
       enable = true;
+      vimAlias = true;
       viAlias = true;
-      withNodeJs = true;
-      extraPackages = [ ];
-
-      plugins = with pkgs.vimPlugins; [ ];
     };
   };
 
@@ -25,15 +22,12 @@
       rust-analyzer
       clang-tools
 
-      tree-sitter
+      #tree-sitter
 
       stylua
       nixpkgs-fmt
       rustfmt
     ];
   };
-
-  home.file.".config/nvim/init.lua".source = ./init.lua;
-  home.file.".config/nvim/lua".source = ./lua;
 }
 
