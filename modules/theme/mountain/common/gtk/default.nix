@@ -30,7 +30,7 @@
     };
 
     font = {
-      name = "FiraCode Nerd Font";
+      name = "Aileron";
       size = 13;
     };
 

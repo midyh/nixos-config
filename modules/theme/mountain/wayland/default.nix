@@ -3,7 +3,6 @@ let
 in
 [
   ./notice
-  ./waybar
   ./wofi
 ] ++ common
 

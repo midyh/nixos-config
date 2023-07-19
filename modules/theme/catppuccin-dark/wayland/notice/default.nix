@@ -2,7 +2,7 @@
 
 {
   services.mako = {
-    font = "FiraCode Nerd Font";
+    font = "Aileron";
     width = 256;
     height = 500;
     margin = "10";
