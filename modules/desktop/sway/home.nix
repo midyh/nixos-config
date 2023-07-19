@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [ ../../environment/sway-variables.nix ];
@@ -36,7 +36,7 @@
     wrapperFeatures.gtk = true;
     config = rec {
       modifier = "Mod4";
-      terminal = "kitty";
+      terminal = "alacritty";
       menu = "${pkgs.wofi}/bin/wofi --show drun";
 
       input = {
