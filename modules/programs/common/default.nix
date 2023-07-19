@@ -1,5 +1,6 @@
 [
   ./alacritty
+  ./kitty
   ./chrome
   ./search
 ]

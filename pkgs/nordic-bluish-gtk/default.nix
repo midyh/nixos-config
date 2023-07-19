@@ -7,7 +7,7 @@ stdenv.mkDerivation {
   src = fetchzip {
     url =
       "https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-bluish-accent-standard-buttons.tar.xz";
-    sha256 = "00gwrdn1biaz95k3nnnkwnsqcqvb369hglmlb77hc728msgqs6kp";
+    sha256 = "sha256-MV4DEl/yjlbhkcw/oNi9gaRM2xQT1VDktrqpN4pwTWE=";
     stripRoot = false;
   };
 
@@ -18,7 +18,7 @@ stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/share/themes/
-    cp -r Nordic-Bluish $out/share/themes
+    cp -r Nordic-bluish-accent-standard-buttons $out/share/themes
   '';
 
   meta = {

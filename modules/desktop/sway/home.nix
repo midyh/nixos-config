@@ -36,7 +36,7 @@
     wrapperFeatures.gtk = true;
     config = rec {
       modifier = "Mod4";
-      terminal = "alacritty";
+      terminal = "kitty";
       menu = "${pkgs.wofi}/bin/wofi --show drun";
 
       input = {

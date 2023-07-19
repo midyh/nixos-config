@@ -5,7 +5,7 @@
     sessionVariables = {
       EDITOR = "nvim";
       BROWSER = "google-chrome-stable";
-      TERMINAL = "alacritty";
+      TERMINAL = "kitty";
       QT_QPA_PLATFORMTHEME = "gtk3";
       QT_SCALE_FACTOR = "1";
       MOZ_ENABLE_WAYLAND = "1";
