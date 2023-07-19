@@ -1,5 +1,6 @@
 [
   ./alacritty
+  ./chrome
   ./firefox
   ./search
 ]

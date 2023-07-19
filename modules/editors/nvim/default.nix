@@ -26,7 +26,6 @@
 
       stylua
       nixpkgs-fmt
-      rustfmt
     ];
   };
 }
