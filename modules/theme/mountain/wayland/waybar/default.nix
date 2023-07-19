@@ -1,0 +1,8 @@
+{ ... }:
+
+{
+  programs.waybar = {
+    position = "top";
+  };
+}
+
