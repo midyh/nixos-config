@@ -1,13 +1,13 @@
-{ cofig, pkgs, lib, inputs, user, ... }:
+{ pkgs, ... }:
 
 {
   home.sessionVariables = {
-    GTK_THEME = "Kanagawa-Dragon";
+    GTK_THEME = "Nordic-Bluish";
   };
 
   home.pointerCursor = {
-    package = pkgs.nordzy-cursors;
-    name = "Nordic";
+    package = pkgs.catppuccin-cursors;
+    name = "Nordic-Bluish";
     size = 16;
   };
 
@@ -16,12 +16,17 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Kanagawa";
-      package = pkgs.kanagawa-gtk;
+      name = "Nordic-Bluish";
+      package = pkgs.nordic-bluish-gtk;
     };
 
     cursorTheme = {
-      name = "Nordic";
+      name = "Nordic-Bluish";
+    };
+
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
     };
 
     font = {
@@ -30,7 +35,7 @@
     };
 
     gtk3.extraConfig = {
-      gtk-xft-antialias = 0; # 1
+      gtk-xft-antialias = 1; # 1
       gtk-xft-hinting = 1;
       gtk-xft-hintstyle = "hintslight";
       gtk-xft-rgba = "rgb";
@@ -44,4 +49,3 @@
     '';
   };
 }
-

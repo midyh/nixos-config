@@ -1,5 +1,5 @@
 let
-  common = import ../common;
+  common = import ../common/;
 in
 [
   ./notice
