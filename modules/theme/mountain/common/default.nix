@@ -1,6 +1,6 @@
 [
-  ./alacritty
   ./fish
   ./gtk
+  ./kitty
 ]
 

@@ -5,16 +5,16 @@
     font = "FiraCode Nerd Font";
     width = 350;
     layer = "top";
-    background-color = "#0f0f0f";
-    text-color = "#f0f0f0";
+    backgroundColor = "#0f0f0f";
+    textColor = "#f0f0f0";
     margin = "0,30,0";
-    padding = 10;
-    border-size = 2;
-    border-color = "#262626";
-    progress-color = "over #262626ff";
-    border-radius = 5;
-    default-timeout = 10000;
-    group-by = "summery";
+    padding = "10";
+    borderSize = 2;
+    borderColor = "#262626";
+    progressColor = "over #262626ff";
+    borderRadius = 5;
+    defaultTimeout = 10000;
+    groupBy = "summery";
 
     extraConfig = ''
       [grouped]
