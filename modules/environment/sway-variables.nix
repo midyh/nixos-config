@@ -4,7 +4,7 @@
   home = {
     sessionVariables = {
       EDITOR = "nvim";
-      BROWSER = "firefox";
+      BROWSER = "google-chrome-stable";
       TERMINAL = "alacritty";
       QT_QPA_PLATFORMTHEME = "gtk3";
       QT_SCALE_FACTOR = "1";
