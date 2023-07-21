@@ -14,16 +14,16 @@
       };
       style = ''
         * {
-            border: none;
-            border-radius: 0;
-            font-family: mononoki Nerd Font;
-            font-size: 14px;
-            min-height: 0;
+          border: none;
+          border-radius: 0;
+          font-family: "Open Sans", "FiraCode Nerd Font";
+          font-size: 14px;
+          min-height: 0;
         }
 
         window#waybar {
-            background: transparent;
-            color: white;
+          background: transparent;
+          color: white;
         }
 
         tooltip {
@@ -32,23 +32,23 @@
         	border-width: 2px;
         	border-style: solid;
         	border-color: #262626;
-        	}
+        }
 
         #workspaces button {
-            padding: 5px 10px;
-            color: #f0f0f0;
+          padding: 5px 10px;
+          color: #f0f0f0;
         }
 
         #workspaces button.focused {
-            color: #0f0f0f;
-            background-color: #c49ec4;
-            border-radius: 15px;
+          color: #0f0f0f;
+          background-color: #c49ec4;
+          border-radius: 15px;
         }
 
         #workspaces button.urgent {
-            color: #0f0f0f;
-            background-color: #9ec3c4;
-            border-radius: 15px;
+          color: #0f0f0f;
+          background-color: #9ec3c4;
+          border-radius: 15px;
         }
 
         #workspaces button:hover {
@@ -57,7 +57,7 @@
         	border-radius: 15px;
         }
 
-        #custom-date, #clock, #battery, #pulseaudio, #network, #workspaces {
+        #custom-date, #clock, #battery, #pulseaudio, #network, #workspaces, #tray {
         	background-color: #0f0f0f;
         	padding: 5px 10px;
         	margin: 5px 0px;
@@ -74,8 +74,8 @@
 
         #clock {
             color: #a39ec4;
-            border-radius: 0px 15px 15px 0px;
-            margin-right: 10px;
+            /*border-radius: 0px 15px 15px 0px;
+            margin-right: 10px;*/
         }
 
         #battery {
@@ -99,6 +99,13 @@
         #pulseaudio {
         	color: #a5b4cb;
         }
+
+        #tray {
+          margin-right: 10px;
+          border-radius: 0px 15px 15px 0px;
+          /*padding-right: 8px;*/
+          /*padding-left: 10px;*/
+        }
       '';
       settings = [{
         "layer" = "top";
@@ -110,6 +117,7 @@
           "battery"
           "custom/date"
           "clock"
+          "tray"
         ];
         "sway/workspaces" = {
           "disable-scroll" = true;
@@ -175,6 +183,10 @@
             "car" = "";
             "default" = [ "" "" "" ];
           };
+        };
+        "tray" = {
+          "icon-size" = 15;
+          "spacing" = 5;
         };
       }];
     };
