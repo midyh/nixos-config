@@ -2,7 +2,7 @@
 
 {
   services.mako = {
-    font = "Aileron";
+    font = "Open Sans";
     width = 256;
     height = 500;
     margin = "10";

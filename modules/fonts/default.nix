@@ -1,9 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   fonts = {
     fonts = with pkgs; [
-      aileron
+      open-sans
       noto-fonts-cjk
       noto-fonts-emoji
       (nerdfonts.override { fonts = [ "FiraCode" ]; })

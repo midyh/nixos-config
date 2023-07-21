@@ -28,21 +28,25 @@
       git
       neovim
       wget
-      neofetch
       exa
+      # C/C++
       gcc
       clang
+      glib
+
+      # Rust
       cargo
-      zig
+
+      # Node.js
+      nodejs
+
+      gdb
       p7zip
       unzip
       joshuto
       ffmpeg
-      glib
       xdg-utils
-      gdb
       killall
-      nodejs
       socat
       zip
       rar

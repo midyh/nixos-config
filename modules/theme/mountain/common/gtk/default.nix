@@ -30,7 +30,7 @@
     };
 
     font = {
-      name = "Aileron";
+      name = "Open Sans";
       size = 13;
     };
 

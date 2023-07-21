@@ -13,7 +13,7 @@
         target = "graphical-session.target";
       };
       style = ''
-              * {
+        * {
             border: none;
             border-radius: 0;
             font-family: mononoki Nerd Font;
@@ -102,7 +102,7 @@
       '';
       settings = [{
         "layer" = "top";
-        "position" = "top";
+        "position" = "bottom";
         modules-center = [
           "sway/workspaces"
           "network"
@@ -128,6 +128,10 @@
             "3" = "三";
             "4" = "四";
             "5" = "五";
+            "6" = "六";
+            "7" = "七";
+            "8" = "八";
+            "9" = "九";
           };
         };
         "custom/date" = {
@@ -136,7 +140,7 @@
           "exec" = "$HOME/bin/waybar-date.sh";
         };
         "clock" = {
-          "format" = "󰅐 {:%H:%M} ";
+          "format" = "󰅐  {:%H:%M} ";
           "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
         "battery" = {
@@ -152,8 +156,8 @@
           "format-icons" = [ "󱊡" "󱊢" "󱊣" ];
         };
         "network" = {
-          "format-wifi" = "  {essid}";
-          "format-ethernet" = "󰤮 Disconnected";
+          "format-wifi" = "   {essid}";
+          "format-ethernet" = "󰤮  Disconnected";
           "format-linked" = "{ifname} (No IP)";
           "format-disconnected" = "󰤮 Disconnected";
           "tooltip-format-wifi" = "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}";

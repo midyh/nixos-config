@@ -113,7 +113,7 @@
       };
     };
     extraConfig = ''
-      set $opacity 0.85
+      set $opacity 0.9
       for_window [app_id="Alacritty"] opacity $opacity
 
       output * adaptive_sync on
