@@ -8,7 +8,6 @@
   networking = {
     hostName = "susanoo";
     networkmanager.enable = true;
-    networkmanager.enableStrongSwan = true;
   };
 
   time.timeZone = "Europe/Athens";
