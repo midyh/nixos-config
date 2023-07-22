@@ -1,4 +1,4 @@
-{ config, pkgs, user, inputs, lib, ... }:
+{ pkgs, user, ... }:
 
 {
   imports =
@@ -14,7 +14,6 @@
     shell = pkgs.fish;
     isNormalUser = true;
     extraGroups = [ "wheel" "video" "audio" "camera" "networkmanager" ];
-    packages = with pkgs; [ ];
   };
 
   boot = {
