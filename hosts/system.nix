@@ -8,6 +8,7 @@
   networking = {
     hostName = "susanoo";
     networkmanager.enable = true;
+    networkmanager.enableStrongSwan = true;
   };
 
   time.timeZone = "Europe/Athens";
@@ -25,6 +26,9 @@
     binsh = "${pkgs.dash}/bin/dash";
     shells = with pkgs; [ fish ];
     systemPackages = with pkgs; [
+      strongswan
+      pptp
+      ppp
       git
       neovim
       wget
@@ -39,6 +43,9 @@
 
       # Node.js
       nodejs
+
+      # Java
+      openjdk8-bootstrap
 
       gdb
       p7zip
