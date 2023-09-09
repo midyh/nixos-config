@@ -48,7 +48,8 @@
           natural_scroll = "enabled";
         };
         "type:keyboard" = {
-          xkb_layout = "us";
+          xkb_layout = "us,gr";
+          xkb_options = "grp:rctrl_toggle";
         };
       };
 
