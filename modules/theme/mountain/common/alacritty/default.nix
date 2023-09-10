@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   programs = {
     alacritty.settings = {
-      font.normal.family = "FiraCode Nerd Font";
+      font.normal.family = "Office Code Pro";
       font.size = 14;
       colors = {
         primary = {
