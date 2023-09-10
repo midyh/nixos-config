@@ -21,7 +21,7 @@
       enable = true;
       ports = [ 22 ];
       settings = {
-        PasswordAuthentication = false;
+        # PasswordAuthentication = false;
       };
     };
   };
@@ -30,13 +30,11 @@
     binsh = "${pkgs.dash}/bin/dash";
     shells = with pkgs; [ fish ];
     systemPackages = with pkgs; [
-      strongswan
-      pptp
-      ppp
       git
       neovim
       wget
       exa
+
       # C/C++
       gcc
       clang
@@ -51,6 +49,7 @@
       # Java
       openjdk8-bootstrap
 
+      libreoffice-qt
       gdb
       p7zip
       unzip
