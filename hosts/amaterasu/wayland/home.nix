@@ -16,6 +16,11 @@
   };
   programs = {
     home-manager.enable = true;
+    git = {
+      enable = true;
+      userName = "midyh";
+      userEmail = "midyan.hamdoun@gmail.com";
+    };
   };
 
   home.stateVersion = "23.05";

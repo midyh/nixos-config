@@ -41,6 +41,9 @@
       clang
       glib
 
+      # Rust
+      cargo
+
       # Node.js
       nodejs
 
