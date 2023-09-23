@@ -36,6 +36,11 @@
 	      config = toLuaFile ./plugin/telescope.lua;
       }
 
+      {
+        plugin = comment-nvim;
+        config = toLua "require(\"Comment\").setup()";
+      }
+
       telescope-fzf-native-nvim
 
       {
