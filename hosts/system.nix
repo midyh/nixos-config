@@ -6,9 +6,8 @@
   nixpkgs.config.allowUnfree = true;
 
   networking = {
-    hostName = "susanoo";
     networkmanager.enable = true;
-    networkmanager.enableStrongSwan = true;
+    # networkmanager.enableStrongSwan = true;
   };
 
   time.timeZone = "Europe/Athens";
@@ -31,9 +30,11 @@
     shells = with pkgs; [ fish ];
     systemPackages = with pkgs; [
       git
+      hub
       neovim
       wget
       exa
+      bat
 
       # C/C++
       gcc

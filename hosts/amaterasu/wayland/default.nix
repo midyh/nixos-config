@@ -33,8 +33,8 @@
       timeout = 3;
     };
   };
-  
-  networking.hostName = "susanoo";
+
+  networking.hostName = "amaterasu";
 
   environment.systemPackages = with pkgs; [
     libnotify
@@ -51,7 +51,6 @@
     flameshot
     grim
     polkit_gnome
-    rust-bin.stable.latest.default
   ];
 
   services.pipewire = {

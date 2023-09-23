@@ -2,12 +2,12 @@
 
 {
   home.sessionVariables = {
-    GTK_THEME = "Nordic-Bluish";
+    GTK_THEME = "Catppuccin-Frappe-Pink";
   };
 
   home.pointerCursor = {
     package = pkgs.catppuccin-cursors;
-    name = "Nordic-Bluish";
+    name = "Catppuccin-Frappe-Dark";
     size = 16;
   };
 
@@ -16,12 +16,12 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Nordic-Bluish";
-      package = pkgs.nordic-bluish-gtk;
+      name = "Catppuccin-Frappe-Pink";
+      package = pkgs.catppuccin-frappe-gtk;
     };
 
     cursorTheme = {
-      name = "Nordic-Bluish";
+      name = "Catppuccin-Frappe-Dark";
     };
 
     iconTheme = {

@@ -7,25 +7,66 @@
     '';
   };
 
-  programs = {
-    neovim = {
-      enable = true;
-      vimAlias = true;
-      viAlias = true;
-    };
-  };
+  programs.neovim =
+  let
+    luaFile = file: builtins.readFile file;
+    toLua = str: "lua << EOF\n${str}\nEOF\n";
+    toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
+  in
+  {
+    enable = true;
 
-  home = {
-    packages = with pkgs; [
-      nil
-      lua-language-server
-      rust-analyzer
-      clang-tools
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
 
-      #tree-sitter
+    extraLuaConfig = ''
+      -- Write lua code here
 
-      stylua
-      nixpkgs-fmt
+      ${builtins.readFile ./options.lua}
+    '';
+
+    plugins = with pkgs.vimPlugins; [
+      {
+        plugin = nvim-lspconfig;
+        type = "lua";
+	      config = luaFile ./plugin/lsp.lua;
+      }
+
+      {
+        plugin = telescope-nvim;
+        type = "lua";
+	      config = luaFile ./plugin/telescope.lua;
+      }
+
+      {
+        plugin = catppuccin-nvim;
+        type = "lua";
+        config = "vim.cmd(\"colorscheme catppuccin-macchiato\")";
+      }
+
+      {
+        plugin = comment-nvim;
+        type = "lua";
+        config = "require(\"Comment\").setup()";
+      }
+
+      telescope-fzf-native-nvim
+
+      {
+      	plugin = nvim-tree-lua;
+        type = "lua";
+	      config = luaFile ./plugin/treelua.lua;
+      }
+
+      {
+        plugin = (nvim-treesitter.withPlugins (p: [
+	        p.tree-sitter-nix
+	        p.tree-sitter-lua
+	      ]));
+        type = "lua";
+        config = luaFile ./plugin/treesitter.lua;
+      }
     ];
   };
 }

@@ -5,11 +5,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
 
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
