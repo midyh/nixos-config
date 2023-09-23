@@ -41,7 +41,7 @@
       {
       	plugin = nvim-tree-lua;
 	config = "";
-      };
+      }
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
