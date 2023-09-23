@@ -40,6 +40,12 @@
       }
 
       {
+        plugin = catppuccin-nvim;
+        type = "lua";
+        config = "vim.cmd(\"colorscheme catppuccin-macchiato\")";
+      }
+
+      {
         plugin = comment-nvim;
         type = "lua";
         config = "require(\"Comment\").setup()";
