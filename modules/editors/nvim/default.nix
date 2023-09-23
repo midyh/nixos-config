@@ -17,15 +17,6 @@
 
   home = {
     packages = with pkgs; [
-      nil
-      lua-language-server
-      rust-analyzer
-      clang-tools
-
-      #tree-sitter
-
-      stylua
-      nixpkgs-fmt
     ];
   };
 }
