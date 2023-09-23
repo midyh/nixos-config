@@ -9,6 +9,7 @@
 
   programs.neovim =
   let
+    luaFile = file: builtins.readFile file;
     toLua = str: "lua << EOF\n${str}\nEOF\n";
     toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
   in
@@ -28,24 +29,28 @@
     plugins = with pkgs.vimPlugins; [
       {
         plugin = nvim-lspconfig;
-	      config = toLuaFile ./plugin/lsp.lua;
+        type = "lua";
+	      config = luaFile ./plugin/lsp.lua;
       }
 
       {
         plugin = telescope-nvim;
-	      config = toLuaFile ./plugin/telescope.lua;
+        type = "lua";
+	      config = luaFile ./plugin/telescope.lua;
       }
 
       {
         plugin = comment-nvim;
-        config = toLua "require(\"Comment\").setup()";
+        type = "lua";
+        config = "require(\"Comment\").setup()";
       }
 
       telescope-fzf-native-nvim
 
       {
       	plugin = nvim-tree-lua;
-	      config = toLuaFile ./plugin/treelua.lua;
+        type = "lua";
+	      config = luaFile ./plugin/treelua.lua;
       }
 
       {
@@ -53,7 +58,8 @@
 	        p.tree-sitter-nix
 	        p.tree-sitter-lua
 	      ]));
-        config = toLuaFile ./plugin/treesitter.lua;
+        type = "lua";
+        config = luaFile ./plugin/treesitter.lua;
       }
     ];
   };
