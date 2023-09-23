@@ -35,7 +35,6 @@ in
     	nixpkgs = {
       	  overlays = [
       	    self.overlays.default
-	    inputs.neovim-nightly-overlay.overlay
           ];
         };
       }
@@ -67,7 +66,6 @@ in
         nixpkgs = {
           overlays = [
             self.overlays.default
-            inputs.neovim-nightly-overlay.overlay
             inputs.rust-overlay.overlays.default
           ]; # ++ (import ../overlays);
         };
