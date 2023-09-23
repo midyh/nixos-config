@@ -39,6 +39,11 @@
       telescope-fzf-native-nvim
 
       {
+      	plugin = nvim-tree-lua;
+	config = "";
+      };
+
+      {
         plugin = (nvim-treesitter.withPlugins (p: [
 	  p.tree-sitter-nix
 	  p.tree-sitter-lua
