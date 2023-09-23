@@ -21,5 +21,6 @@
   home.file.".config/fish/functions/la.fish".text = import ./functions/la.nix;
   home.file.".config/fish/functions/ll.fish".text = import ./functions/ll.nix;
   home.file.".config/fish/functions/cls.fish".text = import ./functions/cls.nix;
+  home.file.".config/fish/functions/cat.fish".text = import ./functions/cat.nix;
 }
 
