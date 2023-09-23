@@ -15,3 +15,6 @@ vim.opt.termguicolors = false
 vim.opt.hlsearch = false;
 vim.opt.scrolloff = 22;
 
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+
