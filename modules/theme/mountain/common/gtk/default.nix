@@ -17,7 +17,7 @@
     enable = true;
     theme = {
       name = "Catppuccin-Frappe-Pink";
-      package = pkgs.catppuccin-frape-gtk;
+      package = pkgs.catppuccin-frappe-gtk;
     };
 
     cursorTheme = {
