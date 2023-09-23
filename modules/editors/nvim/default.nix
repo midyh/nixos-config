@@ -28,27 +28,27 @@
     plugins = with pkgs.vimPlugins; [
       {
         plugin = nvim-lspconfig;
-	config = toLuaFile ./plugin/lsp.lua;
+	      config = toLuaFile ./plugin/lsp.lua;
       }
 
       {
         plugin = telescope-nvim;
-	config = toLuaFile ./plugin/telescope.lua;
+	      config = toLuaFile ./plugin/telescope.lua;
       }
 
       telescope-fzf-native-nvim
 
       {
       	plugin = nvim-tree-lua;
-	config = "";
+	      config = toLuaFile ./plugin/treelua.lua;
       }
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
-	  p.tree-sitter-nix
-	  p.tree-sitter-lua
-	]));
-	config = toLuaFile ./plugin/treesitter.lua;
+	        p.tree-sitter-nix
+	        p.tree-sitter-lua
+	      ]));
+        config = toLuaFile ./plugin/treesitter.lua;
       }
     ];
   };
