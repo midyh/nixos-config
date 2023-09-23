@@ -7,16 +7,44 @@
     '';
   };
 
-  programs = {
-    neovim = {
-      enable = true;
-      vimAlias = true;
-      viAlias = true;
-    };
-  };
+  programs.neovim =
+  let
+    toLua = str: "lua << EOF\n${str}\nEOF\n";
+    toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
+  in
+  {
+    enable = true;
 
-  home = {
-    packages = with pkgs; [
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+
+    extraLuaConfig = ''
+      -- Write lua code here
+
+      ${builtins.readFile ./options.lua}
+    '';
+
+    plugins = with pkgs.vimPlugins; [
+      {
+        plugin = nvim-lspconfig;
+	config = toLuaFile ./plugin/lsp.lua;
+      }
+
+      {
+        plugin = telescope-nvim;
+	config = toLuaFile ./plugin/telescope.lua;
+      }
+
+      telescope-fzf-native-nvim
+
+      {
+        plugin = (nvim-treesitter.withPlugins (p: [
+	  p.tree-sitter-nix
+	  p.tree-sitter-lua
+	]));
+	config = toLuaFile ./plugin/treesitter.lua;
+      }
     ];
   };
 }
