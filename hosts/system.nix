@@ -6,9 +6,8 @@
   nixpkgs.config.allowUnfree = true;
 
   networking = {
-    hostName = "susanoo";
     networkmanager.enable = true;
-    networkmanager.enableStrongSwan = true;
+    # networkmanager.enableStrongSwan = true;
   };
 
   time.timeZone = "Europe/Athens";
@@ -34,14 +33,12 @@
       neovim
       wget
       exa
+      bat
 
       # C/C++
       gcc
       clang
       glib
-
-      # Rust
-      cargo
 
       # Node.js
       nodejs
