@@ -41,6 +41,9 @@
       clang
       glib
 
+      # Python
+      python3
+
       # Rust
       cargo
 
