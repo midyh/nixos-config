@@ -39,6 +39,7 @@
       # C/C++
       gcc
       clang
+      clang-tools
       glib
 
       # Python
