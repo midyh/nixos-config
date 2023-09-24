@@ -10,11 +10,15 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 
 vim.opt.hlsearch = false;
 vim.opt.scrolloff = 22;
 
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
+
+vim.keymap.set('n', '<leader>t', ':tabnew<CR>')
+vim.keymap.set('n', '<C-Tab>', ':tabnext')
+vim.keymap.set('n', '<C-S-Tab>', ':tabprevious')
 

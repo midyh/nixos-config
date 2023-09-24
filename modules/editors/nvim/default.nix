@@ -42,7 +42,7 @@
       {
         plugin = catppuccin-nvim;
         type = "lua";
-        config = "vim.cmd(\"colorscheme catppuccin-macchiato\")";
+        config = "vim.cmd(\"colorscheme catppuccin\")";
       }
 
       {
@@ -61,6 +61,9 @@
 
       {
         plugin = (nvim-treesitter.withPlugins (p: [
+          p.tree-sitter-c
+          p.tree-sitter-cpp
+          p.tree-sitter-java
 	        p.tree-sitter-nix
 	        p.tree-sitter-lua
 	      ]));

@@ -135,11 +135,12 @@
 
       exec_always --no-startup-id default_wall &
 
-      exec swayidle -w \
-          timeout 600 'systemctl suspend' \
-          before-sleep 'myswaylock'
-
     '';
+
+      # exec swayidle -w \
+          # timeout 600 'systemctl suspend' \
+          # before-sleep 'myswaylock'
+
   };
 }
 
