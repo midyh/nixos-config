@@ -7,6 +7,7 @@
       noto-fonts-cjk
       noto-fonts-emoji
       (nerdfonts.override { fonts = [ "FiraCode" ]; })
+      office-code-pro
       twemoji-color-font
     ];
     # fontconfig = {

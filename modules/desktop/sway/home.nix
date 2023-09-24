@@ -87,6 +87,7 @@
         "${modifier}+Space" = "exec ${menu}";
         "${modifier}+Shift+c" = "reload";
         "${modifier}+Escape" = "exec swaymsg exit";
+        "${modifier}+p" = "exec poweroff";
 
         "${modifier}+Left" = "focus left";
         "${modifier}+Right" = "focus right";
