@@ -42,7 +42,7 @@
       glib
 
       # Python
-      python3
+      (python3.withPackages(ps: with ps; [ pip ]))
 
       # Rust
       cargo
