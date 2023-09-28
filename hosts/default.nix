@@ -15,22 +15,22 @@ in
     specialArgs = { inherit inputs user; };
 
     modules = [
-      ./amaterasu/wayland
+      ./amaterasu/gnome
     ] ++ [
       ./system.nix
     ] ++ [
       inputs.home-manager.nixosModules.home-manager
       {
         home-manager = {
-	  useGlobalPkgs = true;
-	  useUserPackages = true;
-	  extraSpecialArgs = { inherit user; };
-	  users.${user} = {
-	    imports = [
-	      (import ./amaterasu/wayland/home.nix)
-	    ];
-	  };
-        };
+    	  useGlobalPkgs = true;
+    	  useUserPackages = true;
+    	  extraSpecialArgs = { inherit user; };
+    	  users.${user} = {
+    	    imports = [
+    	      (import ./amaterasu/gnome/home.nix)
+          ];
+    	  };
+      };
       
     	nixpkgs = {
       	  overlays = [
