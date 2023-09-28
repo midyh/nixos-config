@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ (import ../../../modules/desktop/sway/home.nix) ] ++
+    [ (import ../../../modules/desktop/gnome/home.nix) ] ++
     [ (import ../../../modules/scripts) ] ++
     (import ../../../modules/shell) ++
     (import ../../../modules/editors) ++

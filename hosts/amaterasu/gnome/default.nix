@@ -6,7 +6,7 @@
     [
       ../hardware-configuration.nix
       ../../../modules/fonts
-      ../../../modules/desktop/sway
+      ../../../modules/desktop/gnome
     ];
 
   programs.fish.enable = true;
