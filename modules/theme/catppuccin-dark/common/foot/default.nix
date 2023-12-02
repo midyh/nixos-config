@@ -1,7 +1,16 @@
-{ config, pkgs, ... }
+{ config, pkgs, ... }:
 
 {
   programs.foot.settings = {
-    font = "FiraCode Nerd Font:10";
+    main = {
+      term = "xterm-256color";
+
+      font = "Fira Code:size=11";
+      dpi-aware = "yes";
+    };
+
+    mouse = {
+      hide-when-typing = "yes";
+    };
   }
 }
