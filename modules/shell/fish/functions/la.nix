@@ -1,6 +1,6 @@
 ''
   function la
-    exa -a --icons $argv
+    eza -a --icons $argv
   end
 ''
 

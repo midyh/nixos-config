@@ -33,7 +33,7 @@
       hub
       neovim
       wget
-      exa
+      eza
       bat
 
       # C/C++
