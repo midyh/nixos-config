@@ -1,7 +1,6 @@
 [
   ./fish
   ./gtk
-  ./alacritty
   ./foot
 ]
 

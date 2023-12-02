@@ -1,5 +1,4 @@
 [
-  ./alacritty
   ./fish
   ./gtk
   ./foot

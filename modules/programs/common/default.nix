@@ -1,5 +1,4 @@
 [
-  ./alacritty
   ./chrome
   ./search
   ./foot
