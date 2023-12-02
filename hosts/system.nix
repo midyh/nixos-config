@@ -30,7 +30,7 @@
     shells = with pkgs; [ fish ];
     systemPackages = with pkgs; [
       git
-      hub
+      gh
       neovim
       wget
       eza
