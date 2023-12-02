@@ -1,7 +1,14 @@
 { ... }:
 
 {
-  programs.foot.settings = {
-    font = "FiraCode Nerd Font";
+  programs.foot.settings = { 
+    main = {
+      font = "FiraCode Nerd Font:size=11";
+      dpi-aware = "yes";
+    };
+
+    mouse = {
+      hide-when-typing = "yes";
+    }; 
   };
 }
