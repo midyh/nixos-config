@@ -2,5 +2,6 @@
   ./alacritty
   ./fish
   ./gtk
+  ./foot
 ]
 

@@ -4,7 +4,7 @@
   programs = {
     alacritty.settings = {
       font.normal.family = "Office Code Pro";
-      font.size = 14;
+      font.size = 12;
       colors = {
         primary = {
           background = "#1E1E2E";
