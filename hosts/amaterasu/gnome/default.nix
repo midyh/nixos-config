@@ -16,23 +16,26 @@
     extraGroups = [ "wheel" "video" "audio" "camera" "networkmanager" ];
   };
 
-  boot = {
-    bootspec.enable = true;
-    loader = {
-      efi = {
-        canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot";
-      };
-      grub = {
-        enable = true;
-        devices = [ "nodev" ];
-        efiSupport = true;
-        useOSProber = true;
-      };
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
-      timeout = 3;
-    };
-  };
+#  boot = {
+#    bootspec.enable = true;
+#    loader = {
+#      efi = {
+#        canTouchEfiVariables = true;
+#        efiSysMountPoint = "/boot";
+#      };
+#      grub = {
+#        enable = true;
+#        devices = [ "nodev" ];
+#        efiSupport = true;
+#        useOSProber = true;
+#      };
+#
+#      timeout = 3;
+#    };
+#  };
 
   networking.hostName = "amaterasu";
 
