@@ -37,5 +37,10 @@
       bright6="ebbcba";
       bright7="e0def4";
     };
+
+    csd = {
+      border-width = "2";
+      border-color = "ff404040";
+    };
   };
 }

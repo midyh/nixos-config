@@ -2,5 +2,6 @@
   ./chrome
   ./search
   ./foot
+  ./direnv
 ]
 
