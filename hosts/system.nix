@@ -41,7 +41,7 @@
       clang
       clang-tools
       glib
-      make
+      gnumake
 
       # Python
       (python3.withPackages(ps: with ps; [ pip ]))
