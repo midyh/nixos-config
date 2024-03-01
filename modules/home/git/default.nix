@@ -8,7 +8,9 @@
 
     extraConfig = {
       init.defaultBranch = "main";
-      credential.helper = "store";
+      credential.helper = "${
+        pkgs.git.override { withLibsecret = true; }
+      }/bin/git-credential-libsecret";
     };
   };
 
