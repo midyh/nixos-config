@@ -1,7 +1,7 @@
-{inputs, username, ...}: {
+{
   imports =
        [(import ./waybar)]
-    ++ [(import ./chrome)]
+    ++ [(import ./firefox)]
     ++ [(import ./hyprland)]
     ++ [(import ./git)]
     ++ [(import ./bat)]
