@@ -16,7 +16,7 @@
 
     shellAliases = {
       cat = "bat";
-      ls = "eza --icons";
+      ls = "eza";
       l = "eza --icons -a --group-directories-first -1";
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";

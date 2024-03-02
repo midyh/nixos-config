@@ -28,6 +28,10 @@
       url = "github:catppuccin/starship";
       flake = false;
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+    };
   };
 
   outputs = { self, nixpkgs, ... } @ inputs :
