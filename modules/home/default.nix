@@ -1,6 +1,7 @@
 {
   imports =
        [(import ./waybar)]
+    ++ [(import ./discord)]
     ++ [(import ./firefox)]
     ++ [(import ./hyprland)]
     ++ [(import ./git)]
