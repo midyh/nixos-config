@@ -1,5 +1,4 @@
-{ username, ... }:
-{
+{username, ...}: {
   services.xserver = {
     enable = true;
     xkb.layout = "us";
@@ -14,4 +13,3 @@
 
   # systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 }
- 

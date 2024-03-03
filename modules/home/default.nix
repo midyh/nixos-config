@@ -1,6 +1,6 @@
 {
   imports =
-       [(import ./waybar)]
+    [(import ./waybar)]
     ++ [(import ./discord)]
     ++ [(import ./firefox)]
     ++ [(import ./hyprland)]
@@ -11,9 +11,8 @@
     ++ [(import ./wofi)]
     ++ [(import ./zsh)]
     ++ [(import ./gtk)]
-    ++ [(import ./scripts)]         # personal scripts
+    ++ [(import ./scripts)] # personal scripts
     ++ [(import ./starship)]
     ++ [(import ./nixvim)]
     ++ [(import ./package)];
 }
-

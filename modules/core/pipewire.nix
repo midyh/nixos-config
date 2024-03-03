@@ -8,4 +8,3 @@
     pulse.enable = true;
   };
 }
-

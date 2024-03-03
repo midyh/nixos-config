@@ -1,5 +1,9 @@
-{ pkgs, hostname, config, ... }:
 {
+  pkgs,
+  hostname,
+  config,
+  ...
+}: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -7,7 +11,7 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "fzf" ];
+      plugins = ["git" "fzf"];
     };
     initExtraFirst = ''
       DISABLE_MAGIC_FUNCTIONS=true
@@ -30,4 +34,3 @@
     enableZshIntegration = true;
   };
 }
-

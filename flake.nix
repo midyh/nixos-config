@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    
+
     hypr-contrib.url = "github:hyprwm/contrib";
     hyprpicker.url = "github:hyprwm/hyprpicker";
 
@@ -19,11 +19,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    catppuccin-bat = {
-      url = "github:catppuccin/bat";
-      flake = false;
-    };
-
     catppuccin-starship = {
       url = "github:catppuccin/starship";
       flake = false;
@@ -34,15 +29,15 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... } @ inputs :
-    let
-      # selfPkgs = import ./pkgs;
-      username = "midy";
-    in
-    {
-      # overlays.default = selfPkgs.overlay;
-      nixosConfigurations = import ./modules/core/default.nix {
-        inherit self nixpkgs inputs username;
-      };
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  } @ inputs: let
+    username = "midy";
+  in {
+    nixosConfigurations = import ./modules/core/default.nix {
+      inherit self nixpkgs inputs username;
     };
+  };
 }

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   wayland.windowManager.hyprland = {
     extraConfig = "
       $mainMod = SUPER
@@ -284,4 +283,3 @@
     ";
   };
 }
-

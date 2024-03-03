@@ -1,6 +1,9 @@
-{ inputs, pkgs, ... }:
 {
-  home.packages = (with pkgs; [
+  inputs,
+  pkgs,
+  ...
+}: {
+  home.packages = with pkgs; [
     eza
     entr
     file
@@ -27,6 +30,5 @@
     wget
     xdg-utils
     inputs.alejandra.defaultPackage.${system}
-  ]);
+  ];
 }
-

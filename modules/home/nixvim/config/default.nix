@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   programs.nixvim.enable = true;
   imports = [
     ./autopairs.nix
@@ -12,4 +11,3 @@
     ./treesitter.nix
   ];
 }
-

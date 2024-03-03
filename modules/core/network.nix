@@ -1,9 +1,8 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   networking = {
     hostName = "hircine";
     networkmanager.enable = true;
-    nameservers = [ "1.1.1.1" ];
+    nameservers = ["1.1.1.1"];
     firewall = {
       enable = true;
     };
@@ -13,4 +12,3 @@
     networkmanagerapplet
   ];
 }
-
