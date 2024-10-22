@@ -13,9 +13,5 @@
       swapfile = false;
       undofile = true;
     };
-
-    globals = {
-      mapleader = " ";
-    };
   };
 }

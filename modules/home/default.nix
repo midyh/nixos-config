@@ -12,7 +12,6 @@
     ++ [(import ./zsh)]
     ++ [(import ./gtk)]
     ++ [(import ./scripts)] # personal scripts
-    ++ [(import ./starship)]
     ++ [(import ./nixvim)]
     ++ [(import ./package)];
 }
