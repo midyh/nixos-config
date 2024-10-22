@@ -43,18 +43,32 @@
       tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       format-alt = " {:%d/%m}";
     };
-    "wlr/workspaces" = {
+    "hyprland/workspaces" = {
       active-only = false;
       all-outputs = false;
       disable-scroll = false;
       on-scroll-up = "hyprctl dispatch workspace e-1";
       on-scroll-down = "hyprctl dispatch workspace e+1";
-      format = "{name}";
+      format = "{icon}";
       on-click = "activate";
+      persistent-workspaces = {
+        "1" = [];
+        "2" = [];
+        "3" = [];
+        "4" = [];
+        "5" = [];
+      };
       format-icons = {
-        urgent = "";
-        active = "";
-        default = "";
+        "1" = "一";
+        "2" = "二";
+        "3" = "三";
+        "4" = "四";
+        "5" = "五";
+        "6" = "六";
+        "7" = "七";
+        "8" = "八";
+        "9" = "九";
+        "10" = "十";
         sort-by-number = true;
       };
     };
